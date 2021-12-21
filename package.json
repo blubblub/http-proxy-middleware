@@ -21,7 +21,7 @@
     "test": "jest",
     "precoverage": "npm build",
     "coverage": "jest --coverage --coverageReporters=lcov",
-    "prepare": "npm build && husky install",
+    "prepare": "npm build",
     "prepack": "npm build && rm dist/tsconfig.tsbuildinfo"
   },
   "repository": {
