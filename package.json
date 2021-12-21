@@ -17,12 +17,12 @@
     "prettier:fix": "prettier --write \"**/*.{js,ts,md,yml,json,html}\"",
     "prebuild": "yarn clean",
     "build": "tsc",
-    "pretest": "npm build",
+    "pretest": "npm run build",
     "test": "jest",
-    "precoverage": "npm build",
+    "precoverage": "npm run build",
     "coverage": "jest --coverage --coverageReporters=lcov",
-    "prepare": "npm build",
-    "prepack": "npm build && rm dist/tsconfig.tsbuildinfo"
+    "prepare": "npm run build && husky installd",
+    "prepack": "npm run build && rm dist/tsconfig.tsbuildinfo"
   },
   "repository": {
     "type": "git",
